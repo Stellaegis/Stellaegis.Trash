@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Stellaegis.Trash</RootNamespace>
+    <PackageId>Stellaegis.Trash</PackageId>
+    <Description>A generic trash for an application: a serialized object goes in with its identity, comes back out to be recreated under the same identity, or is purged after its deadline. Isolated per compartment or shared, every call under an actor.</Description>
+    <PackageTags>stellaegis;trash;recycle-bin;restore;retention</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Stellaegis.Primitives" />
+    <PackageReference Include="Stellaegis.Primitives.Hosting" />
+    <InternalsVisibleTo Include="Stellaegis.Trash.Tests" />
+  </ItemGroup>
+
+</Project>
