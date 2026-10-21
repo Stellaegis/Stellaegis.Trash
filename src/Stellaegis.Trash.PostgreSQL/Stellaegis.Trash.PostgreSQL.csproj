@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Stellaegis.Trash.PostgreSQL</RootNamespace>
+    <PackageId>Stellaegis.Trash.PostgreSQL</PackageId>
+    <Description>PostgreSQL store for Stellaegis.Trash (schema trash): items per compartment or shared, payloads encrypted with pgcrypto, row-level security, the schema installed and verified through Stellaegis.Primitives.Data.</Description>
+    <PackageTags>stellaegis;trash;recycle-bin;postgresql</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" />
+    <PackageReference Include="Npgsql" />
+    <PackageReference Include="Stellaegis.Primitives.Data" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stellaegis.Trash\Stellaegis.Trash.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\**\*.sql" />
+  </ItemGroup>
+
+</Project>
