@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Stellaegis.Trash/Stellaegis.Trash.csproj" />
+    <Project Path="src/Stellaegis.Trash.PostgreSQL/Stellaegis.Trash.PostgreSQL.csproj" />
+    <Project Path="src/Stellaegis.Trash.AspNetCore/Stellaegis.Trash.AspNetCore.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Stellaegis.Trash.Tests/Stellaegis.Trash.Tests.csproj" />
+  </Folder>
+</Solution>
