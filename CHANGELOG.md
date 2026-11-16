@@ -7,6 +7,21 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [5.0.2] — 2026-11-16
+
+The store talks to PostgreSQL through Npgsql, and the adapter no longer references Dapper. What the packages do is
+unchanged, and so is their SQL.
+
+### Changed
+
+- **`Stellaegis.Trash.PostgreSQL` no longer references Dapper.** Its repository runs `NpgsqlCommand`, each parameter
+  under its declared type, each row read by the names of its columns. Dapper still comes with
+  `Stellaegis.Primitives.Data` 5.x, which the adapter references.
+
+### Updating from 5.0.1
+
+Take the version: a host has nothing to change.
+
 ## [5.0.1] — 2026-11-09
 
 On `Stellaegis.Primitives` 5.6.0 and Microsoft.Extensions 10.0.14, so that a host taking this module takes the
