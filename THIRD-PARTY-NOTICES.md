@@ -8,7 +8,6 @@ alongside them, each under its own license.
 | Component | Used by | License (SPDX) | Project |
 | --- | --- | --- | --- |
 | Npgsql | `Stellaegis.Trash.PostgreSQL` | PostgreSQL | <https://github.com/npgsql/npgsql> |
-| Dapper | `Stellaegis.Trash.PostgreSQL` | Apache-2.0 | <https://github.com/DapperLib/Dapper> |
 | Stellaegis.Primitives, Stellaegis.Primitives.Hosting, Stellaegis.Primitives.Data, Stellaegis.Primitives.AspNetCore | all packages | MIT | <https://github.com/Stellaegis/Stellaegis.Primitives> |
 | Microsoft.Extensions.\*, ASP.NET Core | all packages, through Stellaegis.Primitives.Hosting | MIT | <https://github.com/dotnet> |
 

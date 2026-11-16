@@ -15,7 +15,7 @@ namespace Stellaegis.Trash.PostgreSQL;
 internal sealed class PostgreSqlTrashStore : ITrashStore, IAsyncDisposable, IDisposable
 {
     private static readonly RepositoryRegistry<TrashDatabase> Registry = new RepositoryRegistry<TrashDatabase>()
-        .Add<ITrashItemRepository>((connection, transaction) => new TrashItemRepository(connection, transaction));
+        .Add<ITrashItemRepository>((connection, transaction) => new TrashItemRepository((NpgsqlConnection)connection, () => (NpgsqlTransaction?)transaction()));
 
     private readonly NpgsqlDataSource _dataSource;
     private readonly AdoSpaceUnitOfWorkFactory<TrashDatabase> _units;

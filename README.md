@@ -17,7 +17,7 @@ The library targets .NET 10 and is released under the MIT license.
 | Package | Contents | Depends on |
 | --- | --- | --- |
 | `Stellaegis.Trash` | `ITrashService`, `TrashItem`, `TrashRequest`, the module and its operations, the options, the API contracts, and the in-memory store | `Stellaegis.Primitives`, `Stellaegis.Primitives.Hosting` |
-| `Stellaegis.Trash.PostgreSQL` | The PostgreSQL store: the schema `trash`, its script, payloads encrypted with pgcrypto, row-level security | `Stellaegis.Primitives.Data`, Npgsql, Dapper |
+| `Stellaegis.Trash.PostgreSQL` | The PostgreSQL store: the schema `trash`, its script, payloads encrypted with pgcrypto, row-level security | `Stellaegis.Primitives.Data`, Npgsql |
 | `Stellaegis.Trash.AspNetCore` | Endpoints that expose the trash over HTTP, and the administration of its purges | `Stellaegis.Primitives.AspNetCore`, ASP.NET Core |
 
 ## Trashing an object
